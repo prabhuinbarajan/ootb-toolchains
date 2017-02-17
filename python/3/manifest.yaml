@@ -1,0 +1,4 @@
+--- 
+build-and-test: "tox"
+lint: "flake8 --ignore E111 --exclude=env,.tox --import-order-style=google"
+unittest-with-coverage: "nosetests --with-coverage"
