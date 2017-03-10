@@ -1,4 +1,8 @@
---- 
-build-and-test: "tox"
-lint: "flake8 --ignore E111 --exclude=env,.tox --import-order-style=google"
-unittest-with-coverage: "nosetests --with-coverage"
+---
+build.compile: "echo compile"
+build.unittest: "echo unittest"
+build.static_code_analysis: "echo static_code_analysis"
+bake.docker_build: "echo docker_build"
+bake.harden: "echo harden"
+deploy_to_qa.functional_test: "echo functional_test"
+deploy_to_qa.manual_approve: "echo manual_approve"
