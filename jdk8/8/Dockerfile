@@ -24,7 +24,7 @@ WORKDIR /data
 
 VOLUME /data
 RUN echo "" >> ${SONAR_RUNNER_HOME}/conf/sonar-runner.properties
-RUN echo sonar.host.url=http://192.168.99.100:9000 >> ${SONAR_RUNNER_HOME}/conf/sonar-runner.properties
+RUN echo sonar.host.url=http://sonar.qubeship.io >> ${SONAR_RUNNER_HOME}/conf/sonar-runner.properties
 
 #ENTRYPOINT ${SONAR_RUNNER_HOME}/bin/sonar-runner
 CMD ["mvn","sonar-runner","bats"]
