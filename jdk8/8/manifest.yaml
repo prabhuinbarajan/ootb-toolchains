@@ -1,4 +1,4 @@
-build.compile: "mvn clean compile"
-build.unittest: "mvn test"
-build.static_code_analysis: "sonar-runner"
-deploy_to_qa.e2e: "bats $1"
+build.compile: 'mvn clean compile'
+build.unittest: 'mvn test'
+build.static_code_analysis: 'sonar-runner'
+deploy_to_qa.e2e: 'bats $1'
