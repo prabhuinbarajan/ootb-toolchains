@@ -1,0 +1,5 @@
+build.compile: 'go get ./... && go build'
+build.unittest: 'go test'
+build.static_code_analysis: 'sonar-runner'
+deploy_to_qa.e2e: 'echo bats'
+
