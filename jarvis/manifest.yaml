@@ -1,0 +1,7 @@
+build.compile: 'gradle build -x test '
+build.unittest: 'gradle build'
+build.static_code_analysis: 'sonar-runner'
+bake.harden: 'echo harden'
+deploy_to_qa.e2e: 'bats $1'
+deploy_to_qa.functional_test: "echo functional_test"
+deploy_to_qa.manual_approve: "echo manual_approve"
