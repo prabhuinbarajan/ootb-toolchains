@@ -1,5 +1,6 @@
 #FROM maven:3.3-jdk-8
 FROM gradle:3.5-jdk8
+USER root
 RUN apt-get update && apt-get install bats
 
 ENV SONAR_RUNNER_VERSION 2.4
