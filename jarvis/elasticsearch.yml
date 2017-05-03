@@ -1,0 +1,10 @@
+cluster.name: elasticsearch
+node.name: elasticsearch
+discovery.zen.minimum_master_nodes: 1
+path.data: /usr/share/elasticsearch/data
+path.logs: /var/log/elasticsearch/logs
+network.host: 0.0.0.0
+transport.tcp.port: 7300
+http.port: 7200
+#xpack.security.enabled: false
+#discovery.zen.ping.multicast.enabled: false
