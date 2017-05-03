@@ -1,4 +1,4 @@
-build.compile: 'gradle build -x test '
+build.compile: 'service supervisor start && gradle build'
 build.unittest: 'gradle build'
 build.static_code_analysis: 'sonar-runner'
 bake.harden: 'echo harden'
