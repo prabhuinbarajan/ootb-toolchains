@@ -1,0 +1,6 @@
+---
+build.compile: "cd Frontend && npm install && npm run build && npm start && cd ../Services && mvn package"
+build.unittest: "echo unittest"
+build.static_code_analysis: "echo static_code_analysis"
+deploy_to_qa.functional_test: "echo functional_test"
+deploy_to_qa.manual_approve: "echo manual_approve"
