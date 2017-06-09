@@ -1,6 +1,6 @@
 ---
 build.compile: "cd Frontend && npm install && npm run build && npm start && cd ../Services && mvn package"
 build.unittest: "echo unittest"
-build.static_code_analysis: "mvn -Dmaven.repo.remote=http://nexus.qubeship.io/repository/maven-releases/,qubeship-releases  com.fortify.ps.maven.plugin:sca-maven-plugin:clean com.fortify.ps.maven.plugin:sca-maven-plugin:translate com.fortify.ps.maven.plugin:sca-maven-plugin:scan  -DskipTest"
+build.static_code_analysis: "cp fortify.license /opt/fortify && mvn com.fortify.ps.maven.plugin:sca-maven-plugin:clean com.fortify.ps.maven.plugin:sca-maven-plugin:translate com.fortify.ps.maven.plugin:sca-maven-plugin:scan  -Dfortify.sca.htmlReport=true -DskipTest"
 deploy_to_qa.functional_test: "echo functional_test"
 deploy_to_qa.manual_approve: "echo manual_approve"
